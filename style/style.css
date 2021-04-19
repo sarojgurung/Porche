@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Gilroy-Bold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Gilroy-Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Gilroy-Heavy.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Gilroy-Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Gilroy-Light.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Gilroy-Medium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Gilroy-Regular.woff') format('woff');
+    }
+
+.hero-section{
+    background: url(../img/hero-image.jpg) no-repeat, linear-gradient(#2e2e2f, #31251f);
+    background-size: 50% auto;
+    background-position: left top;
+}
+
+nav{
+    padding-top: 50px;
+    width: 1560px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navArea{
+    display: flex;
+}
+
+.hero-div{
+    width: 1280px;
+    margin: auto;
+    padding-top: 4em;
+    display: flex;
+    justify-content: flex-end;
+    font-family: "Gilroy";
+    color: white;
+}
+
+.hero-div > div{
+    width: 50%;
+    padding-left: 120px;
+
+}
+
+.subMainTitle{
+    font-family: "Gilroy-Medium";
+    letter-spacing: 10px;
+    color: #919191;
+}
+
+.subMainTitle > span{
+    color: #ff4f00;
+}
+
+.mainTitle{
+    font-family: "Gilroy-Light";
+    font-size: 70px;
+    color: white;
+    position: relative;
+}
+
+.mainTitle::before{
+    border-left: 7px solid #ff4f00;
+    content: "";
+    position: absolute;
+    left: -55px;
+    height: 100%;
+}
+
+.mainTitleBold{
+    font-family: "Gilroy-Bold";
+}
+
+.heroDescription{
+    font-size: 19px;
+    line-height: 38px;
+    margin: 45px 0px;
+}
+
+.btn{
+    font-family: "Gilroy-Bold";
+    background: rgba(255, 79, 0, .1);
+    border: 3px solid #ff4f00;
+    padding: 20px 70px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: white;
+    margin-bottom: 45px;
+    cursor: pointer;
+}
+
+.navArrows{
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.navArrows > div{
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+.gallery{
+    display: flex;
+    width: 1560px;
+    justify-content: flex-end;
+    margin: auto;
+}
